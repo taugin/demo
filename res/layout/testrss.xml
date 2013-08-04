@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <Button 
+        android:id="@+id/start_test"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/test_rss"
+        />
+    <TextView 
+        android:id="@+id/test_process"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/test_result"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        />
+    <ScrollView 
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+        <TextView 
+            android:id="@+id/test_result"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:hint="@string/test_process"
+            android:autoLink="all"
+            />
+    </ScrollView>
+</LinearLayout>

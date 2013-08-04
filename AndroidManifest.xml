@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.android.demo"
+    android:versionCode="1"
+    android:versionName="1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-sdk android:minSdkVersion="14" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    
+    <uses-permission android:name="android.permission.FLASHLIGHT" />  
+    <uses-permission android:name="android.permission.HARDWARE_TEST" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application
+        android:name=".application.GoogleReaderApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        >
+        <activity
+            android:name=".AndroidDemoActivity"
+            android:label="@string/app_name" 
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ExitActivity"
+            >
+            <intent-filter>
+                <action android:name="com.android.demo.intent.action.DEMO"/>
+            </intent-filter>
+        </activity>
+        <service android:name=".floatwin.FloatService">
+            
+        </service>
+        <activity
+            android:name=".DisableHomeKeyTest">
+            <intent-filter>
+                <action android:name="com.android.demo.intent.action.DEMO"/>
+                <category android:name="com.android.demo.intent.category.DEMO"/>
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".FlashlampTest"
+            >
+            <intent-filter>
+                <action android:name="com.android.demo.intent.action.DEMO"/>
+                <category android:name="com.android.demo.intent.category.DEMO"/>
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".FlashCameraTest"
+            >
+            <intent-filter>
+                <action android:name="com.android.demo.intent.action.DEMO"/>
+                <category android:name="com.android.demo.intent.category.DEMO"/>
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".AntialiasTest"
+            >
+            <intent-filter>
+                <action android:name="com.android.demo.intent.action.DEMO"/>
+                <category android:name="com.android.demo.intent.category.DEMO"/>
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".GalleryTest"
+            >
+            <intent-filter>
+                <action android:name="com.android.demo.intent.action.DEMO"/>
+                <category android:name="com.android.demo.intent.category.DEMO"/>
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".DialogPosition"
+            >
+            <intent-filter>
+                <action android:name="com.android.demo.intent.action.DEMO"/>
+                <category android:name="com.android.demo.intent.category.DEMO"/>
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".DragableList"
+            >
+            <intent-filter>
+                <action android:name="com.android.demo.intent.action.DEMO"/>
+                <category android:name="com.android.demo.intent.category.DEMO"/>
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".floatwin.FloatViewActivity"
+            >
+            <intent-filter>
+                <action android:name="com.android.demo.intent.action.DEMO"/>
+                <category android:name="com.android.demo.intent.category.DEMO"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TestRssActivity"
+            >
+            <intent-filter>
+                <action android:name="com.android.demo.intent.action.DEMO"/>
+                <category android:name="com.android.demo.intent.category.DEMO"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RootTestActivity"
+            >
+            <intent-filter>
+                <action android:name="com.android.demo.intent.action.DEMO"/>
+                <category android:name="com.android.demo.intent.category.DEMO"/>
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".ChangeLocale"
+            >
+            <intent-filter>
+                <action android:name="com.android.demo.intent.action.DEMO"/>
+                <category android:name="com.android.demo.intent.category.DEMO"/>
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".CustomAttrs"
+            >
+            <intent-filter>
+                <action android:name="com.android.demo.intent.action.DEMO"/>
+                <category android:name="com.android.demo.intent.category.DEMO"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activityanimation.FirstActivity"
+            >
+            <intent-filter>
+                <action android:name="com.android.demo.intent.action.DEMO"/>
+                <category android:name="com.android.demo.intent.category.DEMO"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activityanimation.SecondActivity"
+            >
+            <intent-filter>
+                <action android:name="com.android.demo.intent.action.DEMO"/>
+                <category android:name="com.android.demo.intent.category.DEMO"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".aidl.client.ClientActivity"
+            >
+            <intent-filter>
+                <action android:name="com.android.demo.intent.action.DEMO"/>
+                <category android:name="com.android.demo.intent.category.DEMO"/>
+            </intent-filter>
+        </activity>
+        <service
+            android:name=".aidl.server.ServerService"
+            >
+        </service>
+        
+        
+        
+        <activity
+            android:name=".AccountTestActivity"
+            >
+            <intent-filter>
+                <action android:name="com.android.demo.intent.action.DEMO"/>
+                <category android:name="com.android.demo.intent.category.DEMO"/>
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".reader.ReaderdemoActivity"
+            >
+            <intent-filter>
+                <action android:name="com.android.demo.intent.action.DEMO"/>
+                <category android:name="com.android.demo.intent.category.DEMO"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".reader.download.DownloadActivity"
+            android:windowSoftInputMode="adjustPan"
+            >
+            <intent-filter>
+                <action android:name="com.android.demo.intent.action.DEMO"/>
+                <category android:name="com.android.demo.intent.category.DEMO"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".accounts.AccountChooser"
+            >
+            <intent-filter>
+                <action android:name="com.android.demo.intent.action.DEMO"/>
+                <category android:name="com.android.demo.intent.category.DEMO"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".reader.AccountChooser"/>
+        <activity android:name=".reader.AddFeed"/>
+        <activity android:name=".reader.AuthenticationActivity"/>
+        
+        <activity
+            android:name=".FragMentActivity"
+            >
+            <intent-filter>
+                <action android:name="com.android.demo.intent.action.DEMO"/>
+                <category android:name="com.android.demo.intent.category.DEMO"/>
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".FragmentDemoActivity"
+            >
+            <intent-filter>
+                <action android:name="com.android.demo.intent.action.DEMO"/>
+                <category android:name="com.android.demo.intent.category.DEMO"/>
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".fragmenttest.FragmentTestActivity"
+            >
+            <intent-filter>
+                <action android:name="com.android.demo.intent.action.DEMO"/>
+                <category android:name="com.android.demo.intent.category.DEMO"/>
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".surface.SurfaceViewTest"
+            >
+            <intent-filter>
+                <action android:name="com.android.demo.intent.action.DEMO"/>
+                <category android:name="com.android.demo.intent.category.DEMO"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+        <EditText 
+            android:id="@+id/command_params"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_weight="1.0"
+            />
+        <Button 
+            android:id="@+id/start_execute"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.0"
+            android:text="@string/go"
+            />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/white"  
+        />
+    <ScrollView 
+        android:id="@+id/shell_scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"        
+        >
+        <TextView 
+            android:id="@+id/shell_result"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            />        
+    </ScrollView>
+</LinearLayout>

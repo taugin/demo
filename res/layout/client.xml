@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <Button 
+        android:id="@+id/aidl_start"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/aidl_start"
+        android:onClick="onClick"
+        />
+    <Button 
+        android:id="@+id/aidl_result"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/aidl_result"
+        android:onClick="onClick"
+        />
+    <TextView 
+        android:id="@+id/aidl_show"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:hint="@string/test_process"
+        android:autoLink="all"
+        />
+</LinearLayout>
