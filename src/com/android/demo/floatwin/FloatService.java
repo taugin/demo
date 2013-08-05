@@ -23,6 +23,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.android.demo.R;
 import com.android.demo.floatwin.FloatView.OnLongPressListener;
 import com.android.demo.floatwin.FloatView.OnPressListener;
 
@@ -79,36 +80,37 @@ public class FloatService extends Service implements OnClickListener{
 	private void initLayoutParams(){
 		mWindowManager = (WindowManager)getSystemService(Service.WINDOW_SERVICE);
     	mLayoutParams = new WindowManager.LayoutParams();
-		mLayoutParams.type = LayoutParams.TYPE_PHONE; // ÉèÖÃwindow type
-		mLayoutParams.format = PixelFormat.RGBA_8888; // ÉèÖÃÍ¼Æ¬¸ñÊ½£¬Ð§¹ûÎª±³¾°Í¸Ã÷
+		mLayoutParams.type = LayoutParams.TYPE_PHONE; // ï¿½ï¿½ï¿½ï¿½window type
+		mLayoutParams.format = PixelFormat.RGBA_8888; // ï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½Ê½ï¿½ï¿½Ð§ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½Í¸ï¿½ï¿½
         mLayoutParams.alpha = 1.0f;
-        //ÉèÖÃWindow flag
+        //ï¿½ï¿½ï¿½ï¿½Window flag
 		mLayoutParams.flags = LayoutParams.FLAG_NOT_TOUCH_MODAL
 				| LayoutParams.FLAG_NOT_FOCUSABLE;
         /*
-         * ÏÂÃæµÄflagsÊôÐÔµÄÐ§¹ûÐÎÍ¬¡°Ëø¶¨¡±¡£
-         * Ðü¸¡´°²»¿É´¥Ãþ£¬²»½ÓÊÜÈÎºÎÊÂ¼þ,Í¬Ê±²»Ó°ÏìºóÃæµÄÊÂ¼þÏìÓ¦¡£
+         * ï¿½ï¿½ï¿½ï¿½ï¿½flagsï¿½ï¿½ï¿½Ôµï¿½Ð§ï¿½ï¿½ï¿½ï¿½Í¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+         * ï¿½ï¿½ï¿½ï¿½É´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îºï¿½ï¿½Â¼ï¿½,Í¬Ê±ï¿½ï¿½Ó°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½
          mLayoutParams.flags=LayoutParams.FLAG_NOT_TOUCH_MODAL 
                                | LayoutParams.FLAG_NOT_FOCUSABLE
                                | LayoutParams.FLAG_NOT_TOUCHABLE;
         */
-//        mLayoutParams.gravity=Gravity.LEFT|Gravity.TOP;   //µ÷ÕûÐü¸¡´°¿ÚÖÁ×óÉÏ½Ç
+//        mLayoutParams.gravity=Gravity.LEFT|Gravity.TOP;   //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï½ï¿½
         mLayoutParams.gravity = Gravity.RIGHT | Gravity.TOP;
-        //ÒÔÆÁÄ»×óÉÏ½ÇÎªÔ­µã£¬ÉèÖÃx¡¢y³õÊ¼Öµ
+        //ï¿½ï¿½ï¿½ï¿½Ä»ï¿½ï¿½ï¿½Ï½ï¿½ÎªÔ­ï¿½ã£¬ï¿½ï¿½ï¿½ï¿½xï¿½ï¿½yï¿½ï¿½Ê¼Öµ
 		mLayoutParams.x = 0;
 		mLayoutParams.y = 0;
 
-		// ÉèÖÃÐü¸¡´°¿Ú³¤¿íÊý¾Ý
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		DisplayMetrics dm = new DisplayMetrics();
 		dm = getResources().getDisplayMetrics();
 		mLayoutParams.width = LayoutParams.WRAP_CONTENT;
 		mLayoutParams.height = LayoutParams.WRAP_CONTENT;
 	}
 	private void createView(){
-    	//»ñÈ¡WindowManager
+    	//ï¿½ï¿½È¡WindowManager
 		FloatView floatView = null;
-		floatView = new FloatView(getApplicationContext(), mWindowManager, mLayoutParams);  
-//		floatView.setBackgroundColor(Color.RED);
+		floatView = new FloatView(getApplicationContext(), mWindowManager, mLayoutParams);
+		floatView.setImageResource(R.drawable.ic_launcher);
+		floatView.setBackgroundColor(Color.RED);
         
 		floatView.setOnPressListener(new OnPressListener() {
 			
@@ -132,11 +134,11 @@ public class FloatService extends Service implements OnClickListener{
 				Log.d(TAG, "HaHa, onLongPress");
 			}
 		});
-        //ÏÔÊ¾myFloatViewÍ¼Ïñ
+        //ï¿½ï¿½Ê¾myFloatViewÍ¼ï¿½ï¿½
 		mFloatView = floatView;
 //		ImageView imageView = new ImageView(this);
 //		imageView.setImageResource(R.drawable.fengjie);
-		mFloatView = mTextView;
+//		mFloatView = mTextView;
         mWindowManager.addView(mFloatView, mLayoutParams);
         /*
         float fromX = 1.0f;
