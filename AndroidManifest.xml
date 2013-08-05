@@ -5,11 +5,11 @@
 
     <uses-sdk android:minSdkVersion="14" />
     <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
-    
+
     <uses-permission android:name="android.permission.FLASHLIGHT" />  
     <uses-permission android:name="android.permission.HARDWARE_TEST" />
     <uses-permission android:name="android.permission.CAMERA"/>
-    
+
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.GET_TASKS" />
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -40,7 +40,7 @@
             </intent-filter>
         </activity>
         <service android:name=".floatwin.FloatService">
-            
+
         </service>
         <activity
             android:name=".DisableHomeKeyTest">
@@ -49,7 +49,7 @@
                 <category android:name="com.android.demo.intent.category.DEMO"/>
             </intent-filter>
         </activity>
-        
+
         <activity
             android:name=".FlashlampTest"
             >
@@ -58,7 +58,7 @@
                 <category android:name="com.android.demo.intent.category.DEMO"/>
             </intent-filter>
         </activity>
-        
+
         <activity
             android:name=".FlashCameraTest"
             >
@@ -67,7 +67,7 @@
                 <category android:name="com.android.demo.intent.category.DEMO"/>
             </intent-filter>
         </activity>
-        
+
         <activity
             android:name=".AntialiasTest"
             >
@@ -76,7 +76,7 @@
                 <category android:name="com.android.demo.intent.category.DEMO"/>
             </intent-filter>
         </activity>
-        
+
         <activity
             android:name=".GalleryTest"
             >
@@ -85,7 +85,7 @@
                 <category android:name="com.android.demo.intent.category.DEMO"/>
             </intent-filter>
         </activity>
-        
+
         <activity
             android:name=".DialogPosition"
             >
@@ -94,7 +94,7 @@
                 <category android:name="com.android.demo.intent.category.DEMO"/>
             </intent-filter>
         </activity>
-        
+
         <activity
             android:name=".DragableList"
             >
@@ -103,7 +103,7 @@
                 <category android:name="com.android.demo.intent.category.DEMO"/>
             </intent-filter>
         </activity>
-        
+
         <activity
             android:name=".floatwin.FloatViewActivity"
             >
@@ -128,7 +128,7 @@
                 <category android:name="com.android.demo.intent.category.DEMO"/>
             </intent-filter>
         </activity>
-        
+
         <activity
             android:name=".ChangeLocale"
             >
@@ -137,7 +137,7 @@
                 <category android:name="com.android.demo.intent.category.DEMO"/>
             </intent-filter>
         </activity>
-        
+
         <activity
             android:name=".CustomAttrs"
             >
@@ -174,9 +174,7 @@
             android:name=".aidl.server.ServerService"
             >
         </service>
-        
-        
-        
+
         <activity
             android:name=".AccountTestActivity"
             >
@@ -185,7 +183,7 @@
                 <category android:name="com.android.demo.intent.category.DEMO"/>
             </intent-filter>
         </activity>
-        
+
         <activity
             android:name=".reader.ReaderdemoActivity"
             >
@@ -214,7 +212,7 @@
         <activity android:name=".reader.AccountChooser"/>
         <activity android:name=".reader.AddFeed"/>
         <activity android:name=".reader.AuthenticationActivity"/>
-        
+
         <activity
             android:name=".FragMentActivity"
             >
@@ -223,7 +221,7 @@
                 <category android:name="com.android.demo.intent.category.DEMO"/>
             </intent-filter>
         </activity>
-        
+
         <activity
             android:name=".FragmentDemoActivity"
             >
@@ -232,7 +230,7 @@
                 <category android:name="com.android.demo.intent.category.DEMO"/>
             </intent-filter>
         </activity>
-        
+
         <activity
             android:name=".fragmenttest.FragmentTestActivity"
             >
@@ -241,7 +239,7 @@
                 <category android:name="com.android.demo.intent.category.DEMO"/>
             </intent-filter>
         </activity>
-        
+
         <activity
             android:name=".surface.SurfaceViewTest"
             >
