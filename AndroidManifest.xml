@@ -248,6 +248,12 @@
                 <category android:name="com.android.demo.intent.category.DEMO"/>
             </intent-filter>
         </activity>
+        <activity android:name="com.android.demo.BitmapEffectActivity">
+            <intent-filter>
+                <action android:name="com.android.demo.intent.action.DEMO"/>
+                <category android:name="com.android.demo.intent.category.DEMO"/>
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
